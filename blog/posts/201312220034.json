@@ -1,0 +1,16 @@
+{
+      "blogpost": {
+          "data": "2013-10-12 23:23:12",
+          "title": "This is the first post blog title",
+          "author": "Ribeiro.r",
+          "content": {
+            "header": "this is the resumed text",
+            "body": "this is the detailed text"
+          },
+          "tags": [
+            "tag": "technology",
+            "tag": "people",
+            "tag": "crazy"
+          ]
+        }
+}

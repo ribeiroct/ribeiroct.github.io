@@ -1,0 +1,16 @@
+{
+    "blogpost": {
+          "data": "2013-10-12 23:23:12",
+          "title": "This is a second post blog title",
+          "author": "longinus525",
+          "content": {
+            "header": "this is the resumed text 2",
+            "body": "this is the detailed text 2"
+          },
+          "tags": [
+            "tag": "other",
+            "tag": "student",
+            "tag": "crazy"
+          ]
+    }
+}

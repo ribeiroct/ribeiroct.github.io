@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Ricardo Ribeiro - Programmer</title>
+      
+
+
+    <link rel="stylesheet" href="../../stylesheets/styles.css">
+    <link rel="stylesheet" href="../../stylesheets/pygment_trac.css">
+    <link href="../../stylesheets/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="../../stylesheets/bootstrap-theme.min.css" rel="stylesheet" media="screen">      
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+      
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script type="text/javascript" language="javascript" src="../../javascripts/jquery.js"></script>                    
+    <script type="text/javascript" language="javascript" src="../../javascripts/bootstrap.min.js"></script>    
+      
+      <!-- markitup includes -->
+      
+      	<!--link rel="stylesheet" type="text/css" href="latest/images/style.css"-->
+	<!-- markItUp! skin -->
+	<link rel="stylesheet" type="text/css" href="latest/markitup/skins/simple/style.css">
+	<!--  markItUp! toolbar skin -->
+	<link rel="stylesheet" type="text/css" href="latest/markitup/sets/textile/style.css">
+	<!-- markItUp! -->
+	<script type="text/javascript" src="latest/markitup/jquery.markitup.js"></script>
+	<!-- markItUp! toolbar settings -->
+	<script type="text/javascript" src="latest/markitup/sets/textile/set.js"></script>
+      <script type="text/javascript">
+$(function() {
+	// Add markItUp! to your textarea in one line
+	// $('textarea').markItUp( { Settings }, { OptionalExtraSettings } );
+	$('#short_post').markItUp(mySettings);
+	$('#long_post').markItUp(mySettings);
+
+});
+</script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+
+        <h1>Ricardo Ribeiro</h1>
+                    <img id="my_photo" src="../../images/me.png" alt="me" class="img-thumbnail"/>
+        <p>Portfolio and Personal Blog of a Computer and Telematics Engineer in Training</p>
+<div>
+                    <ul>
+              <li><a href="https://ribeiroct.github.io">About Me</a></li>
+              <li><a href="https://ribeiroct.github.io/portfolio">Portfolio</a></li>
+              <li><a href="https://ribeiroct.github.io/blog">Personal Blog</a></li>
+              <li><a href="https://github.com/ribeiroct">GitHub Profile</a></li>
+
+          </ul>
+         </div>
+        <!--
+    "blogpost": {
+          "data": "2013-10-12 23:23:12",
+          "title": "This is a second post blog title",
+          "author": "longinus525",
+          "content": {
+            "header": "this is the resumed text 2",
+            "body": "this is the detailed text 2"
+          },
+          "tags": [
+            "tag": "other",
+            "tag": "student",
+            "tag": "crazy"
+          ]
+    }
+-->
+      </header>
+      <section>
+          <ul class="nav nav-tabs">
+  <li class="active"><a href="#">Write Post</a></li>
+  <li><a href="#">Result</a></li>
+</ul>
+        <h3>Post generator</h3>
+        <div class="input-group">
+          <span class="input-group-addon">Title</span>
+          <input type="text" id="title" class="form-control" placeholder="Insert Title here...">
+        </div> <br />
+        <div class="input-group">
+          <span class="input-group-addon">Date</span>
+          <input type="text" id="date" class="form-control" placeholder="Insert Date here...">
+                      <span class="input-group-addon">Author</span>
+          <input type="text" id="date" class="form-control" placeholder="Insert Author here...">
+        </div>
+          <br />
+        <div class="input-group">
+          <span class="input-group-addon">Post Resume</span>
+            <span style="max-width: 300px !important;" class="form-control">
+                 <textarea id="short_post"  rows="12" placeholder="Short post resume"></textarea>
+            </span>
+        </div>        <br />   
+        <div class="input-group">
+          <span class="input-group-addon">Post Content</span>
+                        <span style="max-width: 300px !important;" class="form-control">
+
+          <textarea id="long_post" class="form-control" rows="12" placeholder="Full post"></textarea>
+                            </span>
+        </div>           <br />
+        <div class="input-group">
+          <span class="input-group-addon">Tags</span>
+          <input type="text" id="title" class="form-control" placeholder="Tag1 Tag2 Tag3">
+                  <span class="input-group-btn">
+                                            <button type="button" class="btn btn-success">Generate Post</button>
+
+</span>
+
+        </div>          
+
+          
+      </section>
+      <footer>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
