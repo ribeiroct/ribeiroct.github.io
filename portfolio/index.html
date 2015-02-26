@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />        
-    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">      
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Ricardo Ribeiro - Programmer</title>
-      
+
 
 
     <link rel="stylesheet" href="../stylesheets/styles.css">
@@ -14,23 +14,23 @@
     <link href="../stylesheets/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="../stylesheets/bootstrap-theme.min.css" rel="stylesheet" media="screen">
     <link href="../stylesheets/lightbox.css" rel="stylesheet" />
-      
+
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-      
+
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <script type="text/javascript" language="javascript" src="../javascripts/jquery.js"></script>                    
-    <script type="text/javascript" language="javascript" src="../javascripts/bootstrap.min.js"></script>  
-    <script src="../javascripts/lightbox-2.6.min.js"></script>  
+    <script type="text/javascript" language="javascript" src="../javascripts/jquery.js"></script>
+    <script type="text/javascript" language="javascript" src="../javascripts/bootstrap.min.js"></script>
+    <script src="../javascripts/lightbox-2.6.min.js"></script>
     <script type="text/javascript" language="javascript">
         $(document).ready(function() {
-        
+
                $('li[id^="facetnav_"]').click(function() {
                 //<span class="pull-right glyphicon glyphicon-plus"></span>
                 var suffix = this.id.replace('facetnav_', '');
 
-                if ($("#facet_" + suffix).is(':visible')) {  
+                if ($("#facet_" + suffix).is(':visible')) {
                     var text = $(this).text();
                     $(this).empty();
                     $(this).html(text+ '<span class="pull-right glyphicon glyphicon-plus"></span>');
@@ -43,7 +43,7 @@
 
                 $("#facet_" + suffix).fadeToggle('fast');
 
-            });  
+            });
                });
         function openAllProjects(){
             $('li[id^="facetnav_"]').each(function( index ) {
@@ -52,9 +52,9 @@
               $("#facet_" + suffix).fadeToggle('fast');
             });
         }
-    </script>  
-      
-      
+    </script>
+
+
   </head>
   <body>
     <div class="wrapper">
@@ -81,9 +81,9 @@
         <ul class="list-group">
           <li id="facetnav_geststock" class="menu_pointer list-group-item">GestStock (stock management environment)
               <span class="pull-right glyphicon glyphicon-plus"></span>
-            </li>
+          </li>
           <li style="display: none;" id="facet_geststock" class="list-group-item">
-            
+
               GestStock is a personal project for development of a stock management integrated environment for small/medium sized textile companies.<br /><br />
               The System has a JavaEE powered backend using a graphical html interface, a MySql-based database and a webservice infraestructure to allow multiple end-points, using HTML interfaces or mobile applications (such as Android).
               <br /><br />
@@ -104,33 +104,57 @@
                   </a>
               </div>
             </li>
+          <li id="facetnav_pmi" class="menu_pointer list-group-item">J.P. Remelhe webpage
+            <span class="pull-right glyphicon glyphicon-plus"></span></li>
+             <li style="display: none" id="facet_pmi" class="list-group-item">
+
+                 I developed the webpage for J.P. Remelhe, a construction company mainly focused on the public government sector.
+                 <br />
+                 The webpage is available in <a href="http://www.jpremelhe.pt">http://www.jpremelhe.pt</a><br />
+
+              <div class="thumbnail_container">
+                  <a href="../images/jpremelhe/1.jpg" data-lightbox="jpremelhe">
+                    <img class="img-thumbnail" src="../images/jpremelhe/1.jpg" width="25%" height="25%" />
+                  </a>
+              </div>
+              <div class="thumbnail_container">
+                  <a href="../images/jpremelhe/2.jpg" data-lightbox="jpremelhe">
+                    <img class="img-thumbnail" src="../images/jpremelhe/2.jpg" width="25%" height="25%" />
+                  </a>
+              </div>
+              <div class="thumbnail_container">
+                  <a href="../images/jpremelhe/3.jpg" data-lightbox="jpremelhe">
+                    <img class="img-thumbnail" src="../images/jpremelhe/3.jpg" width="25%" height="25%" />
+                  </a>
+              </div>
+
+            </li>
           <li id="facetnav_pmi" class="menu_pointer list-group-item">Personal Movie Index (personal movie indexing system)
             <span class="pull-right glyphicon glyphicon-plus"></span></li>
              <li style="display: none" id="facet_pmi" class="list-group-item">
-            
+
                  Personal Movie Index is what it sounds, a personal media indexer written in Java SE for a linux/windows media server. This is just a pet project, being only for personal use.<br /><br />
                  It runs on a cronjob on a media server and analyzes the disks, creating a index of all the content, including descriptions, thumbnails, etc. This system uses for indexing the same system western digital media set-top boxes use. So the indexed information can also be used by wd boxes.<br /> <br />
-                 
+
                                 <div class="thumbnail_container">
                   <a href="../images/pmi/multimediafetcheralpha.png" data-lightbox="pmi">
                     <img class="img-thumbnail" src="../images/pmi/multimediafetcheralpha.png" width="25%" height="25%" />
                   </a>
               </div>
-                 
-            </li>
 
+            </li>
         </ul>
         <h3>University Projects</h3>
         <ul class="list-group">
-          <li id="facetnav_basketfss" class="menu_pointer list-group-item">BasketFSS (flexible statistics system for basketball)<span class="pull-right glyphicon glyphicon-plus"></span></li>   
+          <li id="facetnav_basketfss" class="menu_pointer list-group-item">BasketFSS (flexible statistics system for basketball)<span class="pull-right glyphicon glyphicon-plus"></span></li>
         <li style="display: none" id="facet_basketfss" class="list-group-item">
-            
+
             BasketFSS is a event-based flexible statistics system for basketball developed using Asp.net Razor, a Sql Server Database and a javascript-based interface, based on Ajax requests. One of the main objectives was the development of a interface that was tablet-friendly.<br /><br />
             The main objective is allowing the record of user-defined statistics in all aspects relating the game. The statistics can be simple, or can be complex and calculated based on operations over other statistics, such as average and sum of. They can also be categorized as being about a game, about a specific player, or about a team. Everything is dynamic, even the definition of "winning" a game. See the screenshoots for more details.<br /><br />
-            
-            This project was developed by a two man team. I was in charge of the interface and Ajax.net interaction with the database, being the database at charge of a colleague of mine.<br /><br /> 
-            
-            
+
+            This project was developed by a two man team. I was in charge of the interface and Ajax.net interaction with the database, being the database at charge of a colleague of mine.<br /><br />
+
+
                <div class="thumbnail_container">
                   <a href="../images/basketfss/basketFSS_index.png" data-lightbox="basketfss">
                     <img class="img-thumbnail" src="../images/basketfss/basketFSS_index.png" width="25%" height="25%" />
@@ -142,22 +166,22 @@
                     <img class="img-thumbnail" src="../images/basketfss/basketFSS_SEETeams.png" width="25%" height="25%" />
                   </a>
               </div>
-            
-            </li>    
+
+            </li>
           <li id="facetnav_asminhasportagens" class="menu_pointer list-group-item">AsMinhasPortagens (Highway trip's manager)<span class="pull-right glyphicon glyphicon-plus"></span>
-            
+
 
             </li>
              <li style="display: none" id="facet_asminhasportagens" class="list-group-item">              AsMinhasPortagens is a highway trip manager developed with users of Via Verde in mind, using Java EE. The main objective is the better visualization of trips, using for that the monthly receipts, since the official webpage doesn't allow a visual interpretation of the data.<br /><br />
-              
+
               The system also shows additional information, such as estimated costs of tolls and gas and even includes a mobile interface for carpooling.<br /><br />
-              
+
                  At last, the system as a complete back-end for management of users, and statistical analysis.<br /><br />
-                 
+
             This project was developed by a team of five. Me being mainly responsible for the web interface and the creation of a map with the existing tools to be used on the system. <br /> <br />
-                 
+
                  A video presentation can be seen here: <a href="http://www.youtube.com/watch?v=_6W4BcIhDtQ">http://www.youtube.com/watch?v=_6W4BcIhDtQ</a> <br />
-                 
+
                           <div class="thumbnail_container">
                   <a href="../images/asminhasportagens/1.png" data-lightbox="amp">
                     <img class="img-thumbnail" src="../images/asminhasportagens/1.png" width="25%" height="25%" />
@@ -170,23 +194,23 @@
                   </a>
               </div>
             </li>
-             
-          <li id="facetnav_haccp" class="menu_pointer list-group-item">Haccp (management of sensors)<span class="pull-right glyphicon glyphicon-plus"></span></li> 
+
+          <li id="facetnav_haccp" class="menu_pointer list-group-item">Haccp (management of sensors)<span class="pull-right glyphicon glyphicon-plus"></span></li>
              <li style="display: none" id="facet_haccp" class="list-group-item">
-            
+
                  Haccp is a sensor-management distributed environment using webservice orchestration.<br /> <br/ > The system envolves several technologies (from the basic sensor input reading from zigbee sensors until web interface for management). Must of the system is build using Java EE.<br /><br/> All the information is presumed being on different and isolated systems, that communicate only through webservices. There's the possibility even of several sensor sources being indexed by the same sensor indexer and controlled through a single web interface. <br /> <br/ >
-                This was developed by a team of 19 people, my job was mainly the web interface development (included in the screenshots). <br /><br />           
-                 
+                This was developed by a team of 19 people, my job was mainly the web interface development (included in the screenshots). <br /><br />
+
             </li>
           <li id="facetnav_quizz40" class="menu_pointer list-group-item">Quizz 40 (question/answer android & ios game)<span class="pull-right glyphicon glyphicon-plus"></span></li>
              <li style="display: none" id="facet_quizz40" class="list-group-item">
-            
+
                  Quizz 40 is a question/answer iOs/Android game, much like "Who wants to be a millionaire", developed using Objective C and Java, in a innitiative of commemoration of the 40 years of my university. <br /><br />
-                 
+
                  The main difference from the usual question/answer games is the hability of import packages of questions, and the existence of a question package creator. (for desktop, developed in Java SE with a swing interface).<br /><br />
-                 
+
                  This was developed by a theme of three and i was tasked with the specification and development of the packages, and package creator, plus the implementation of the design specified for the applications.<br /><br />
-                 
+
               <div class="thumbnail_container">
                   <a href="../images/quizz40/quizz0.png" data-lightbox="quizz40">
                     <img class="img-thumbnail" src="../images/quizz40/quizz0.png" width="15%" height="15%" />
@@ -197,62 +221,62 @@
                   <a href="../images/quizz40/quizz1.png" data-lightbox="quizz40">
                     <img class="img-thumbnail" src="../images/quizz40/quizz1.png" width="15%" height="15%" />
                   </a>
-              </div>           
+              </div>
             </li>
-          <li id="facetnav_dam" class="menu_pointer list-group-item">Domotic Appliances system (using SunSpots)<span class="pull-right glyphicon glyphicon-plus"></span></li>  
+          <li id="facetnav_dam" class="menu_pointer list-group-item">Domotic Appliances system (using SunSpots)<span class="pull-right glyphicon glyphicon-plus"></span></li>
              <li style="display: none" id="facet_dam" class="list-group-item">
-            
+
                  DAS is a domotic wireless appliances system developed with a web of things approach, and using Oracle SunSpots. <br /><br />
-                 
+
                  The system has several wireless spots (sensors/actuators) that communicate through 802.15.4 (IEEE zigbee implementation) with a central server. The central server allows control over webservices.<br /><br />
-                 
+
                  I also developed a we interface using exclusively javascript and static html to access and control this sensors, and as a proof-of-concept of the possibilities of the webservices the system provides (screenshots below).<br /><br />
-            
+
             </li>
           <li id="facetnav_biwv" class="menu_pointer list-group-item">Blogspot indexer and web visualizer (using Solr)<span class="pull-right glyphicon glyphicon-plus"></span></li>
              <li style="display: none" id="facet_biwv" class="list-group-item">
-            
+
                  BIWB was a project developed for Information Retrieval, using mainly Java and Javascript.<br /> <br />
-                 
+
                  The project revolved around the development of a Solr Based Search Engine, a indexer for the blogspot corpora( using SolrJ) and a visualizer of the information on the search engine(using AjaxSolr). The visualizer can be seen on the screenshots below.<br /> <br />
-            
+
              <div class="thumbnail_container">
                   <a href="../images/biwv/0.png" data-lightbox="biwv">
                     <img class="img-thumbnail" src="../images/biwv/0.png" width="25%" height="25%" />
                   </a>
-              </div>  
-                 
+              </div>
+
             </li>
           <li id="facetnav_olivia" class="menu_pointer list-group-item">Olivia (XBMC plugin allowing voice and Kinect Control)<span class="pull-right glyphicon glyphicon-plus"></span></li>
              <li style="display: none" id="facet_olivia" class="list-group-item">
-            
+
                  Olivia is a personal assistant and plugin developed to control XBMC over voice and gestures, making use of the json-rpc api. Olivia was developed using C#, the Microsoft Speech Platform and Kinect.<br /><br />
-            
+
                  The project was developed by a team of two, and my main job was the development of the voice recognition module and the development of the gestures recognition handler.<br /> <br />
                <div class="thumbnail_container">
                   <a href="../images/olivia/story_board.png" data-lightbox="olivia">
                     <img class="img-thumbnail" src="../images/olivia/story_board.png" width="25%" height="25%" />
                   </a>
-              </div>                 
+              </div>
             </li>
           <li id="facetnav_medianfilter" class="menu_pointer list-group-item">Median Filter (using CUDA)<span class="pull-right glyphicon glyphicon-plus"></span></li>
              <li style="display: none" id="facet_medianfilter" class="list-group-item">
-            
+
                  During my ACA(Advanced Computers Arquitecture) course, me and a colleague developed a command line software that implemented a image median filter using CUDA 1.3 for distributed processing.
-            
+
             </li>
           <li id="facetnav_pbes" class="menu_pointer list-group-item">Plugin-based Encryption Software<span class="pull-right glyphicon glyphicon-plus"></span></li>
              <li style="display: none" id="facet_pbes" class="list-group-item">During my security course I and a colleague of mine, developed a plugin-based command-line encryption software using C.<br /> <br />
-            
+
             The system implemented a dynamic system where the cypher plugin was included in the cyphered structure, and the cyphered struture was scrambled (using a linked list of random blocks of the files to create confusion).<br /> <br />
             </li>
           <li id="facetnav_hlls" class="menu_pointer list-group-item">Hybrid Linux Login system (using SmartCards and temporary users)<span class="pull-right glyphicon glyphicon-plus"></span></li>
              <li style="display: none" id="facet_hlls" class="list-group-item">
-            
+
                 Me and a colleague developed a hybrid login system for linux, using a custom PAM module that relies on a database and that recognizes smart-cards, allowing authorized users in the system to associate a smartcard. And with that smartcard to create short-lived temporary accounts on a linux system. The module has a web interface for management written in PHP (shown on the pictures below).<br /> <br />
-                 
+
                  My work was mainly the development of the web interface for management, and the  interaction with the database (association of cards, creation of new users, etc).<br /> <br />
-                 
+
                  <div class="thumbnail_container">
                   <a href="../images/seguranca_2/1.png" data-lightbox="seguranca">
                     <img class="img-thumbnail" src="../images/seguranca_2/1.png" width="25%" height="25%" />
@@ -263,17 +287,17 @@
                   <a href="../images/seguranca_2/3.png" data-lightbox="seguranca">
                     <img class="img-thumbnail" src="../images/seguranca_2/3.png" width="25%" height="25%" />
                   </a>
-              </div>                 
-                 
+              </div>
+
             </li>
-        </ul> 
-          
+        </ul>
+
       </section>
       <footer>
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
     </div>
     <script src="javascripts/scale.fix.js"></script>
-    
+
   </body>
 </html>
